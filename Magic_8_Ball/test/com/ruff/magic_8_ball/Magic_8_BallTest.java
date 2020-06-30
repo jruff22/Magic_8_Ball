@@ -8,15 +8,26 @@ import org.junit.jupiter.api.Test;
 class Magic_8_BallTest {
 	
 	public static Magic_8_Ball ball;
+
+	
 	
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
+		ball = new Magic_8_Ball();
+		
 	}
 
 	@Test
 	void test() {
-		fail("Not yet implemented");
+		ball.getAns0();
+		ball.getAns1();
+		ball.getAns2();
+		ball.getAns3();
+		ball.shake();
+		
+		
+		//fail("Not yet implemented");
 	}
 
 }
